@@ -1,5 +1,44 @@
-p {
-    background-color:red;
-    color:white;
-    font-size: 15px;
+@blue:#81b3d2;
+
+body {
+    margin: 0;
+    font-family: 'PT Sans', sans-serif;
+    background-color: #f2f2f2;
+}
+
+.page-container {
+    width: 320px;
+    margin: 0 auto;
+}
+.site-nav {
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        flex-wrap:wrap;
+        li {
+            width: 100%;
+            &:not(:first-child) {
+                border-top:1px solid darken(@blue, 5%);
+            }
+            &:not(:last-child) {
+                border-bottom:1px solid lighten(@blue, 5%);
+            }
+            a {
+                display: block;
+                padding: 20px;
+                background-color: @blue;
+                color:white;
+                text-transform: uppercase;
+                text-decoration: none;
+                font-size: 18px;
+                text-align: center;
+            }
+        }
+    }
 }
