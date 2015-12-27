@@ -1,0 +1,112 @@
+.showcase {
+  &__header {
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 26px;
+    width: 270px;
+    margin: 20px auto;
+    &--second {
+      font-size: 14px;
+      font-weight: normal;
+      }
+    }
+  &__reason {
+    padding: 20px 50px;
+    background-color: @grey;
+    border-bottom: 1px solid darken(@grey, 10%);
+    &--main {
+      background-color: @blue;
+      color:white;
+    }
+    h3 {
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 18px;
+    }
+    p {
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 14px;
+      line-height: 21px;
+    }
+  }
+  &__feature {
+    padding: 10px 70px;
+    background: white url(../img/showcase/apartments.png) no-repeat 20px 20px;
+    background-size: 40px;
+    &--food {
+      background-image: url(../img/showcase/food.png);
+    }
+    &--souvenirs {
+      background-image: url(../img/showcase/souvenirs.png);
+    }
+    h3 {
+      text-transform: uppercase;
+      font-size: 18px;
+    }
+    p {
+      text-transform: uppercase;
+      font-size: 14px;
+      line-height: 21px;
+    }
+  }
+  &__photo {
+    height: 256px;
+    background: url(../img/showcase/pic-1.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    &--second {
+      background-image: url(../img/showcase/pic-2.jpg);
+    }
+  }
+  @media @tablet {
+    &__header {
+      font-size: 21px;
+      margin: 30px auto;
+      width: 500px;
+      &--second {
+        font-size: 14px;
+      }
+    }
+    &__content {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &__reason {
+      flex-basis: 33%;
+      flex-grow: 1;
+      padding-top: 40px;
+      h3 {
+        font-size: 21px;
+        line-height: 26px;
+        width: 160px;
+        margin: 0 auto;
+      }
+      p {
+        font-size: 14px;
+        line-height: 21px;
+      }
+    }
+    &__photo {
+      flex-basis: 66%;
+      flex-grow: 1;
+    }
+    &__feature {
+      flex-basis: 33%;
+      flex-grow: 1;
+      padding: 140px 65px 40px;
+      background-position: 50% 15%;
+      background-size: 80px 90px;
+      h3 {
+        text-align: center;
+        font-size: 21px;
+        line-height: 26px;
+      }
+      p {
+        text-align: center;
+        font-size: 14px;
+        line-height: 21px;
+      }
+    }
+  }
+}
