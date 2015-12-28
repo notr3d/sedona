@@ -1,11 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>sedona</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <title>sedona</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 </head>
 <body>
-    <p>hello world</p>
+  <div class="main-container">
+    <header class="main-menu">
+      <a class="main-menu__link" href="index.html">Информация</a>
+      <a class="main-menu__link" href="#">Оставить отзыв</a>
+      <a class="main-menu__link" href="#">Блог шерифа</a>
+      <a class="main-menu__link" href="#">Гостиницы</a>
+      <button class="main-menu__cross"></button>
+      <div class="main-menu__bar">
+        <a class="main-menu__logo" href="index.html"></a>
+        <button class="main-menu__burger"></button>  
+      </div>
+    </header>
+    <section class="intro"></section>
+    <article class="showcase">
+      <h1 class="showcase__header">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+      <h2 class="showcase__header  showcase__header--second">Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</h2>
+      <div class="showcase__content">
+        <div class="showcase__reason  showcase__reason--main">
+          <h3>Настоящий городок</h3>
+          <p>— №1 —</p>
+          <p>Седона не атракцион для туристов, там течет своя жизнь</p>
+        </div>
+        <div class="showcase__photo"></div>
+        <div class="showcase__feature">
+          <h3>Жилье</h3>
+          <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+        </div>
+        <div class="showcase__feature  showcase__feature--food">
+          <h3>Еда</h3>
+          <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+        </div>
+        <div class="showcase__feature showcase__feature--souvenirs">
+          <h3>Сувениры</h3>
+          <p>Не только китайского, но и местного производства</p>
+        </div>
+        <div class="showcase__photo  showcase__photo--second"></div>
+        <div class="showcase__reason  showcase__reason--main">
+          <h3>Там есть мост дьявола</h3>
+          <p>— №2 —</p>
+          <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+        </div>
+        <div class="showcase__reason">
+          <h3>Небольшая площадь</h3>
+          <p>— №3 —</p>
+          <p>Все достопримечательности находятся очень близко</p>
+        </div>
+        <div class="showcase__reason">
+          <h3>Красивая дорога</h3>
+          <p>— №4 —</p>
+          <p>Ехать в седону из Лас-Вегаса совсем не скучно!</p>
+        </div>
+        <div class="showcase__reason">
+          <h3>Мало туристов</h3>
+          <p>— №5 —</p>
+          <p>Большинство едет в гранд каньон и толпится там</p>
+        </div>
+      </div>      
+    </article>
+    <section class="proceed">
+      <h2 class="proceed__header">Заинтересовались?</h2>
+      <p class="proceed__text">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      <a  class="proceed__link" href="#">Найти гостиницу</a>
+    </section>
+    <section class="map"></section>
+    <footer class="footer">
+      <a href="#" class="footer__hashtag">#visitsedona</a> 
+      <div class="footer__links">
+        <a href="#" class="footer__link"></a>
+        <a href="#" class="footer__link  footer__link--fb"></a>
+        <a href="#" class="footer__link  footer__link--yt"></a>
+      </div> 
+      <a href="#" class="footer__copyright">разработано</a>
+    </footer>
+  </div>
+  <script src="http://maps.googleapis.com/maps/api/js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/map.js"></script>
 </body>
 </html>

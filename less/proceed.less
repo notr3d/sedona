@@ -1,0 +1,41 @@
+.proceed {
+  background-color: white;
+  padding: 20px 30px 40px;
+  &__header {
+    font-size: 21px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__text {
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 280px;
+    margin: 0 auto 30px;
+  }
+  &__link {
+    display: block;
+    width: 280px;
+    height: 60px;
+    background-color: @blue;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 60px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+  @media @tablet {
+    &__header {
+      font-size: 30px;
+    }
+    &__text {
+      width: 460px;
+    }
+    &__link {
+      width: 460px;
+    }
+  }
+}

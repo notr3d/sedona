@@ -1,0 +1,55 @@
+.footer {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  height: 240px;
+  justify-content: space-around;
+  align-items: center;
+  &__hashtag {
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    font-size: 21px;
+    font-weight: bold;
+    text-align: center;
+    color: #000;
+    text-transform: uppercase;
+  }
+  &__links {
+    display: flex;
+    justify-content: center;
+    width: 160px;
+  }
+  &__link {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 3px;
+    background: @blue url(../img/social/twitter.svg) no-repeat 50% 50%;
+    &--fb {
+      background-image: url(../img/social/facebook.svg);
+    }
+    &--yt {
+      background-image: url(../img/social/youtube.svg);
+    }
+  }
+  &__copyright {
+    display: block;
+    font-size:14px;
+    color: #000;
+    text-transform: uppercase;
+    padding-left: 15px;
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    background: url(../img/htmlacademy.svg) no-repeat 90% 50%;
+  }
+  @media @tablet {
+    flex-direction: row;
+    height: 120px;
+    &__copyright {
+      margin-right: 0;
+    }
+  }
+}
