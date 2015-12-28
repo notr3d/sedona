@@ -1,0 +1,29 @@
+.paginator {
+  padding: 25px 0 10px;
+  display: flex;
+  flex-wrap:wrap;
+  border-bottom: 2px solid @grey;
+  justify-content: center;
+  &__item {
+    background-color: @blue;
+    color:white;
+    font-size: 21px;
+    line-height: 60px;
+    text-align: center;
+    margin: 0 15px 15px 0;
+    width: 60px;
+    height: 60px;
+  }
+  @media @tablet {
+    flex-basis: 100%;
+    position: relative;
+    &::before {
+      content: 'СТРАНИЦА:';
+      font-size: 21px;
+      font-weight: bold;
+      position: absolute;
+      top: 40px;
+      left: 30px;
+    }
+  }
+}

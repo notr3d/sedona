@@ -131,6 +131,12 @@
   }
 }
 .intro {
+  height: 160px;
+  background: url(../img/intro/sedona.png) no-repeat 50% 50%, #fff url(../img/intro/bg.jpg) no-repeat 50% 35%;
+  background-size: 280px 50px, 
+    1280px 773px;
+}
+.intro--full {
   height: 400px;
   background: url(../img/intro/welcome.png) no-repeat 50% 15%, url(../img/intro/sedona.png) no-repeat 50% 50%, url(../img/intro/because.png) no-repeat 50% 80%, #fff url(../img/intro/bg.jpg) no-repeat 50% 15%;
   background-size: 200px 80px, 
@@ -140,11 +146,16 @@
 }
 @media (min-width: 768px) {
   .intro {
+    height: 290px;
+    background-size: 460px 80px, 
+      1280px 773px;
+  }
+  .intro--full {
     height: 500px;
     background-size: 280px 100px, 
-      480px 90px, 
-      300px 90px, 
-      1280px 773px;
+        480px 90px, 
+        300px 90px, 
+        1280px 773px;
   }
 }
 .showcase__header {
@@ -302,6 +313,114 @@
   height: 350px;
   background: url(../img/map.jpg) no-repeat 50% 50%;
   background-size: cover;
+}
+.blog {
+  padding: 20px;
+  background-color: white;
+}
+.blog__header {
+  text-align: center;
+  text-transform: uppercase;
+}
+.blog__header--first {
+  font-size: 30px;
+}
+.blog__header--second {
+  font-size: 14px;
+  font-weight: normal;
+  padding-bottom: 30px;
+  line-height: 24px;
+  border-bottom: 2px solid #eee;
+}
+.blog__item {
+  padding: 40px 0;
+  border-bottom: 2px solid #eee;
+}
+.blog__link {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  font-size: 21px;
+  color: #000;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.blog__text {
+  text-align: center;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.blog__date {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-style: italic;
+  color: #9a9a9a;
+  padding-left: 20px;
+  background: url(../img/blog-date.png) no-repeat 0% 50%;
+  margin-right: 30px;
+}
+.blog__type {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-style: italic;
+  color: #9a9a9a;
+  padding-left: 20px;
+  background: url(../img/blog-type.png) no-repeat 0% 50%;
+}
+@media (min-width: 768px) {
+  .blog {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .blog__header {
+    flex-basis: 100%;
+  }
+  .blog__link {
+    min-height: 60px;
+  }
+  .blog__item {
+    flex-basis: 44%;
+    margin: 0 3%;
+  }
+}
+@media (min-width: 1180px) {
+  .blog__item {
+    flex-basis: 31%;
+    margin: 0 1%;
+  }
+}
+.paginator {
+  padding: 25px 0 10px;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 2px solid #eee;
+  justify-content: center;
+}
+.paginator__item {
+  background-color: #81b3d2;
+  color: white;
+  font-size: 21px;
+  line-height: 60px;
+  text-align: center;
+  margin: 0 15px 15px 0;
+  width: 60px;
+  height: 60px;
+}
+@media (min-width: 768px) {
+  .paginator {
+    flex-basis: 100%;
+    position: relative;
+  }
+  .paginator::before {
+    content: 'СТРАНИЦА:';
+    font-size: 21px;
+    font-weight: bold;
+    position: absolute;
+    top: 40px;
+    left: 30px;
+  }
 }
 * {
   box-sizing: border-box;
