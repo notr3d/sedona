@@ -1,5 +1,13 @@
 .intro {
-  height: 400px;
+  height: 160px;
+  background: 
+    url(../img/intro/sedona.png) no-repeat 50% 50%,
+    #fff url(../img/intro/bg.jpg) no-repeat 50% 35%;
+  background-size:  
+    280px 50px, 
+    1280px 773px;
+  &--full {
+    height: 400px;
   background: 
     url(../img/intro/welcome.png) no-repeat 50% 15%,
     url(../img/intro/sedona.png) no-repeat 50% 50%,
@@ -10,12 +18,19 @@
     280px 50px, 
     200px 60px, 
     1280px 773px;
+  }
   @media @tablet {
-    height: 500px;
-    background-size: 
-      280px 100px, 
-      480px 90px, 
-      300px 90px, 
+    height: 290px;
+    background-size:  
+      460px 80px, 
       1280px 773px;
+    &--full {
+      height: 500px;
+      background-size: 
+        280px 100px, 
+        480px 90px, 
+        300px 90px, 
+        1280px 773px;
+    }
   }
 }
