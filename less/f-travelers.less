@@ -1,0 +1,59 @@
+.f-travelers {
+  padding-bottom: 0;
+  label {
+    font-size: 14px;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 20px 0 15px 20px;
+  }
+  input {
+    outline: none;  
+    border: none;
+    height: 60px;       
+    background-color: @grey;
+    font-size: 18px;
+    font-weight: bold;      
+    font-family: 'PT Sans', sans-serif;
+    &[type="text"] {
+      padding-left: 20px;
+    }
+  }
+  label[for="travelers-count"] {
+    width: 100%;
+  }
+  input[type="button"] {
+    width: 60px;
+    font-size: 50px;
+    line-height: 40px;
+    color:darken(@grey, 25%);
+    border: none;
+    vertical-align: top;
+  }
+  
+  &__item {
+    display: flex;
+    flex-wrap:wrap;
+    input[type="text"] {
+      flex-grow: 1;
+      margin: 0 6px;
+      width: 10px !important;
+      margin-bottom: 25px;
+    }
+  }
+  @media @tablet {
+    padding-bottom: 60px;
+    &__item {
+      width: 350px;
+      margin: 0 auto 30px;
+      label {
+        text-align: center;
+        padding-left: 0;
+      }
+      input {
+        &[type="text"] {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
