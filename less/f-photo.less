@@ -1,0 +1,85 @@
+.f-photo {  
+  margin-bottom: 40px;
+  input {
+    display: none;
+  } 
+  label {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    font-size: 21px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: @grey;
+    padding: 15px 0;
+    color:darken(@grey, 25%);
+    margin-bottom: 55px;
+    cursor: pointer;
+    max-width: 460px;  
+    &:hover {
+      background-color: @blue;
+      color:white;
+    }
+    &:active {
+      background-color: darken(@blue, 10%);
+    }
+  }
+  &__item {
+    width: 70px;
+    height: 70px;
+    margin: 0;
+    position: relative;
+    margin-right: 35px;
+    margin-bottom: 35px;
+    display: inline-block;
+    button {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-left: -15px;
+      margin-top: -15px;
+      width: 30px;
+      height: 30px;
+      font-size: 27px;
+      line-height: 28px;
+      background-color: lighten(@grey, 3%);
+      color:darken(@grey, 20%);
+      border-radius: 50%;
+      border: none;
+      &:hover {
+      background-color: @blue;
+        color:white;
+      }
+      &:active {
+        background-color: darken(@blue, 10%);
+      }
+    }
+    figcaption {
+      display: none;
+    }
+    img {
+      width: 70px;
+      height: 70px;
+      border:1px solid @grey;
+    }
+  }
+  @media @tablet {
+    &__item {
+      width: 140px;
+      height: 140px;
+      img {
+        width: 140px;
+        height: 140px;
+      }
+      figcaption {
+        display: block;
+      }
+      button {
+        width: 60px;
+        height: 60px;
+        margin-left: -30px;
+        margin-top: -30px;
+      }
+    }
+  }
+}

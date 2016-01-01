@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>blog</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <div class="main-container  main-container--form">
+    <header class="main-menu">
+      <a class="main-menu__link" href="index.html">Информация</a>
+      <a class="main-menu__link" href="#">Оставить отзыв</a>
+      <a class="main-menu__link" href="blog.html">Блог шерифа</a>
+      <a class="main-menu__link" href="#">Гостиницы</a>
+      <button class="main-menu__cross"></button>
+      <div class="main-menu__bar">
+        <a class="main-menu__logo" href="index.html"></a>
+        <button class="main-menu__burger"></button>  
+      </div>
+    </header>
+    <section class="intro"></section>
+    <form class="form">
+      <section class="form__heading">
+        <h1>Оставьте свой отзыв</h1>
+        <p>Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      </section>
+      <section class="f-name">
+        <h2 class="f-name__header">Представьтесь, пожалуйста:</h2>
+        <div class="f-name__item">
+          <label for="lastname">Фамилия: *</label>
+          <input type="text" id="lastname">
+        </div>
+        <div class="f-name__item">
+          <label for="firstname">Имя: *</label>
+          <input type="text" id="firstname">
+        </div>
+        <div class="f-name__item">
+          <label for="middlename">Отчетсво</label>
+          <input type="text" id="middlename">
+        </div>
+      </section>
+      <section class="f-impression">
+        <h2 class="f-impression__header">Ваше общее впечатление:</h2>
+        <div class="f-impression__item">
+          <input type="radio" id="good" name="impression">
+          <label for="good">Скорее положительное</label>
+        </div>
+        <div class="f-impression__item">
+          <input type="radio" id="bad" name="impression">
+          <label for="bad">Скорее отрицательное</label>
+        </div>
+      </section>
+      <section class="f-vacation">
+        <h2 class="f-vacation__header">Дата вашей поездки:</h2>
+        <div class="f-vacation__item">
+          <label for="arrival">Дата приезда: *</label>
+          <input type="text" id="arrival" class="f-vacation__arrival">
+        </div>
+        <div class="f-vacation__item">
+          <label for="duration">Длительность пребывания: *</label>
+          <input type="button" id="arrival-" value="&minus;">
+          <input type="text" id="duration" class="f-vacation__duration">
+          <input type="button" id="arrival+" value="&plus;">
+        </div>
+         <div class="f-vacation__item">
+          <label for="departure">Дата отъезда: *</label>
+          <input type="text" id="departure" class="f-vacation__departure" disabled>
+        </div>
+      </section>
+      <section class="f-travelers">
+        <h2 class="f-travelers__header">Кол-во путешественников:</h2>
+        <div class="f-travelers__item">
+          <label for="travelers-count">Количество путешественников: *</label>
+          <input type="button" id="cound-" value="&minus;">
+          <input type="text" id="travelers-count">
+          <input type="button" id="count+" value="&plus;">  
+        </div>
+        <div class="f-traveler">
+          <div class="f-traveler__item">
+            <div class="f-traveler__number">
+              <span>№</span>
+              <div>1</div>
+            </div>
+            <div class="f-traveler__lastname">
+              <label for="t-lastname">Фамилия: *</label>
+              <input type="text" id="t-lastname">
+            </div>                                
+          </div>
+          <div class="f-traveler__item">
+            <div class="f-traveler__firstname">
+              <label for="t-firstname">Имя: *</label>
+              <input type="text" id="t-firstname">
+            </div>          
+          </div>
+          <div class="f-traveler__item">
+            <div class="f-traveler__middlename">
+              <label for="t-middlename">Отчество: *</label>
+              <input type="text" id="t-middlename">
+            </div>
+          </div>
+        </div>
+        <div class="f-traveler">
+          <div class="f-traveler__item">
+            <div class="f-traveler__number">
+              <span>№</span>
+              <div>1</div>
+            </div>
+            <div class="f-traveler__lastname">
+              <label for="t-lastname">Фамилия: *</label>
+              <input type="text" id="t-lastname">
+            </div>                                
+          </div>
+          <div class="f-traveler__item">
+            <div class="f-traveler__firstname">
+              <label for="t-firstname">Имя: *</label>
+              <input type="text" id="t-firstname">
+            </div>          
+          </div>
+          <div class="f-traveler__item">
+            <div class="f-traveler__middlename">
+              <label for="t-middlename">Отчество: *</label>
+              <input type="text" id="t-middlename">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="f-attraction">
+        <h2 class="f-attraction__header">Посещенные достопримечательности:</h2>
+        <div class="f-attraction__item">
+          <input type="checkbox" id="attr-1" name="attraction">
+          <label for="attr-1">Мост Дьявола</label>
+        </div>
+        <div class="f-attraction__item">
+          <input type="checkbox" id="attr-2" name="attraction">
+          <label for="attr-2">Гора-Колокол</label>
+        </div>
+        <div class="f-attraction__item">
+          <input type="checkbox" id="attr-3" name="attraction">
+          <label for="attr-3">Слайд-парк</label>
+        </div>
+        <div class="f-attraction__item">
+          <input type="checkbox" id="attr-4" name="attraction">
+          <label for="attr-4">Красные скалы</label>
+        </div>
+      </section>
+      <section class="f-photo">
+        <h2 class="f-photo-header">Загрузите фотографии:</h2>
+        <label for="photo">Выбрать фотографии</label>
+        <input type="file" id="photo" multiple>
+        <figure class="f-photo__item">
+          <button>&times;</button>
+          <img src="" alt="">
+          <figcaption>img-686.jpg</figcaption>
+        </figure>
+        <figure class="f-photo__item">
+          <button>&times;</button>
+          <img src="" alt="">
+          <figcaption>img-686.jpg</figcaption>
+        </figure>
+      </section>
+      <input type="submit" value="Отправить отзыв">
+    </form>
+    <footer class="footer">
+      <a href="#" class="footer__hashtag">#visitsedona</a> 
+      <div class="footer__links">
+        <a href="#" class="footer__link"></a>
+        <a href="#" class="footer__link  footer__link--fb"></a>
+        <a href="#" class="footer__link  footer__link--yt"></a>
+      </div> 
+      <a href="#" class="footer__copyright">разработано</a>
+    </footer>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>

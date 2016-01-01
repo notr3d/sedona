@@ -1,0 +1,76 @@
+.form {
+  padding: 40px 20px;
+  &__heading {
+    text-transform: uppercase;
+    text-align: center;
+    h1 {
+      font-size: 18px;
+      margin-bottom: 35px;
+    }
+    p {
+      font-size: 14px;
+      line-height: 24px;
+      margin-bottom: 25px;
+    }
+  }
+  @media @tablet {
+    padding: 70px 60px;
+    &__heading {
+      h1 {
+        font-size: 26px;
+      }
+    }
+  }
+}
+
+.main-container--form section {
+  border-bottom: 2px solid @grey;
+  padding: 20px 0;
+  h2 {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }  
+  input {
+    outline: none;
+    cursor: pointer;
+  }
+  @media @tablet {
+    position: relative;
+    padding: 40px 0 80px;
+    h2 {
+      font-size: 21px;
+      position: absolute;
+      top: -30px;
+      left: 50%;
+      margin-left: -200px;
+      width: 400px;
+      background-color: white;
+    }
+  }
+}
+
+input {
+  &[type="submit"] {
+    margin: 0 auto;
+    display: block;
+    background-color: @blue;
+    border: none;
+    width: 100%;
+    max-width: 460px;
+    color: white;
+    padding: 15px 0;
+    font-size: 21px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    &:hover {
+      background-color: darken(@blue, 10%);
+    }
+    &:active {
+      background-color: darken(@blue, 20%);
+    }
+  }
+}

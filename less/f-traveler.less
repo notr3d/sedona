@@ -1,0 +1,57 @@
+.f-traveler { 
+  margin-bottom: 20px;
+  &__number {
+    width: 60px;
+    margin-right: 6px;
+    span {
+      display: block;
+      font-size: 14px;      
+      text-align: center;
+      padding: 20px 0 15px;
+    }
+    div {
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      background-color: @grey;
+    }
+  }
+  &__lastname {
+    flex-grow: 1;
+  }
+  &__firstname {
+    padding-left: 66px;
+    flex-grow: 1;
+  }
+  &__middlename {
+    padding-left: 66px;
+    flex-grow: 1;
+  }
+  &__item {
+    display: flex;
+    label {
+      width: 100%;
+    }
+    input {
+      width: 100%;
+    }
+  }
+  @media @tablet {
+    display: flex;
+    &__item {
+      flex-basis: 32%;
+      &:first-child {
+        flex-basis: 36%;
+      }
+    }
+    &__firstname {
+      padding-left: 6px;
+    }
+    &__middlename {
+      padding-left: 6px;
+    }
+  }
+}
