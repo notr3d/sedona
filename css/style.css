@@ -48,6 +48,12 @@
   border-top: 1px solid #a7cadf;
   display: none;
 }
+.main-menu__link:hover {
+  background-color: #6ea8cb;
+}
+.main-menu__link:active {
+  color: rgba(255, 255, 255, 0.3);
+}
 @media (min-width: 768px) {
   .main-menu__cross {
     display: none;
@@ -69,6 +75,13 @@
   }
   .main-menu__link:nth-child(4) {
     order: 1;
+  }
+  .main-menu__link:hover {
+    background-color: transparent;
+    color: #81b3d2;
+  }
+  .main-menu__link:active {
+    opacity: .3;
   }
   .main-menu__bar {
     flex-basis: 20%;
@@ -110,6 +123,12 @@
 }
 .footer__link--yt {
   background-image: url(../img/social/youtube.svg);
+}
+.footer__link:hover {
+  background-color: #5b9cc5;
+}
+.footer__link:active {
+  background-color: #3e84af;
 }
 .footer__copyright {
   display: block;
@@ -298,6 +317,12 @@
   line-height: 60px;
   margin: 0 auto;
   margin-bottom: 40px;
+}
+.proceed__link:hover {
+  background-color: #5b9cc5;
+}
+.proceed__link:active {
+  background-color: #3e84af;
 }
 @media (min-width: 768px) {
   .proceed__header {
@@ -658,6 +683,12 @@ input[type="submit"] {
   font-weight: bold;
   cursor: pointer;
 }
+input[type="submit"]:hover {
+  background-color: #5b9cc5;
+}
+input[type="submit"]:active {
+  background-color: #3e84af;
+}
 .f-name label {
   font-size: 14px;
   text-transform: uppercase;
@@ -676,6 +707,13 @@ input[type="submit"] {
 .f-name input[type="text"] {
   width: 100%;
   padding-left: 20px;
+}
+.f-name input[type="text"]:hover {
+  background-color: #d5d5d5;
+}
+.f-name input[type="text"]:focus {
+  background-color: white;
+  border: 3px solid #eee;
 }
 .f-name input {
   width: 100%;
@@ -726,6 +764,7 @@ input[type="submit"] {
   left: 0;
   border-radius: 50%;
   background-color: #eee;
+  transition: all .3s;
 }
 .f-impression label::after {
   content: '';
@@ -737,6 +776,12 @@ input[type="submit"] {
   left: 20px;
   border-radius: 50%;
   background-color: black;
+}
+.f-impression label:hover::before {
+  background-color: #d5d5d5;
+}
+.f-impression label:active::before {
+  background-color: #bbbbbb;
 }
 @media (min-width: 768px) {
   .f-impression {
@@ -766,6 +811,16 @@ input[type="submit"] {
 .f-vacation input[type="text"] {
   padding-left: 20px;
 }
+.f-vacation input[type="text"]:hover {
+  background-color: #d5d5d5;
+}
+.f-vacation input[type="text"]:focus {
+  background-color: white;
+  border: 3px solid #eee;
+}
+.f-vacation input[disabled] {
+  cursor: auto;
+}
 .f-vacation label[for="duration"] {
   width: 100%;
 }
@@ -776,6 +831,13 @@ input[type="submit"] {
   color: #aeaeae;
   border: none;
   vertical-align: top;
+}
+.f-vacation input[type="button"]:hover {
+  background-color: #81b3d2;
+  color: white;
+}
+.f-vacation input[type="button"]:active {
+  background-color: #5b9cc5;
 }
 .f-vacation__arrival {
   width: 100%;
@@ -839,6 +901,13 @@ input[type="submit"] {
 .f-travelers input[type="text"] {
   padding-left: 20px;
 }
+.f-travelers input[type="text"]:hover {
+  background-color: #d5d5d5;
+}
+.f-travelers input[type="text"]:focus {
+  background-color: white;
+  border: 3px solid #eee;
+}
 .f-travelers label[for="travelers-count"] {
   width: 100%;
 }
@@ -849,6 +918,13 @@ input[type="submit"] {
   color: #aeaeae;
   border: none;
   vertical-align: top;
+}
+.f-travelers input[type="button"]:hover {
+  background-color: #81b3d2;
+  color: white;
+}
+.f-travelers input[type="button"]:active {
+  background-color: #5b9cc5;
 }
 .f-travelers__item {
   display: flex;
@@ -964,6 +1040,7 @@ input[type="submit"] {
   left: 0;
   background-color: #eee;
   border-radius: 6px;
+  transition: all .3s;
 }
 .f-attraction label::after {
   content: '';
@@ -977,6 +1054,12 @@ input[type="submit"] {
   left: 20px;
   background-color: none;
   transform: rotate(-45deg);
+}
+.f-attraction label:hover::before {
+  background-color: #d5d5d5;
+}
+.f-attraction label:active::before {
+  background-color: #bbbbbb;
 }
 @media (min-width: 768px) {
   .f-attraction {
@@ -1008,6 +1091,13 @@ input[type="submit"] {
   cursor: pointer;
   max-width: 460px;
 }
+.f-photo label:hover {
+  background-color: #81b3d2;
+  color: white;
+}
+.f-photo label:active {
+  background-color: #5b9cc5;
+}
 .f-photo__item {
   width: 70px;
   height: 70px;
@@ -1031,6 +1121,13 @@ input[type="submit"] {
   color: #bbbbbb;
   border-radius: 50%;
   border: none;
+}
+.f-photo__item button:hover {
+  background-color: #81b3d2;
+  color: white;
+}
+.f-photo__item button:active {
+  background-color: #5b9cc5;
 }
 .f-photo__item figcaption {
   display: none;
@@ -1061,6 +1158,7 @@ input[type="submit"] {
 }
 * {
   box-sizing: border-box;
+  transition: all .3s;
 }
 body {
   margin: 0;

@@ -47,6 +47,12 @@
     border-bottom: 1px solid darken(@blue, 10%);
     border-top: 1px solid lighten(@blue, 10%);
     display: none;
+    &:hover {
+      background-color: darken(@blue, 5%);
+    }
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
   @media @tablet {
     &__cross {
@@ -68,6 +74,13 @@
       }
       &:nth-child(4) {
         order:1;
+      }
+      &:hover {
+        background-color: transparent;
+        color: @blue;
+      }
+      &:active {
+        opacity: .3;
       }
     }  
     &__bar {

@@ -16,6 +16,13 @@
     margin-bottom: 55px;
     cursor: pointer;
     max-width: 460px;  
+    &:hover {
+      background-color: @blue;
+      color:white;
+    }
+    &:active {
+      background-color: darken(@blue, 10%);
+    }
   }
   &__item {
     width: 70px;
@@ -39,6 +46,13 @@
       color:darken(@grey, 20%);
       border-radius: 50%;
       border: none;
+      &:hover {
+      background-color: @blue;
+        color:white;
+      }
+      &:active {
+        background-color: darken(@blue, 10%);
+      }
     }
     figcaption {
       display: none;

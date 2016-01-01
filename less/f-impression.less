@@ -33,7 +33,8 @@
       top: 0;
       left: 0;
       border-radius: 50%;
-      background-color: @grey;
+      background-color: @grey;      
+      transition: all .3s;
     }
     &::after {
       content: '';
@@ -45,6 +46,16 @@
       left: 20px;
       border-radius: 50%;
       background-color: black;
+    }
+    &:hover {
+      &::before {
+        background-color: darken(@grey, 10%);
+      }
+    }
+    &:active {
+      &::before {
+        background-color: darken(@grey, 20%);
+      }
     }
   }
   @media @tablet {

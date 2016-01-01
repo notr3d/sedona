@@ -66,5 +66,11 @@ input {
     text-align: center;
     font-weight: bold;
     cursor: pointer;
+    &:hover {
+      background-color: darken(@blue, 10%);
+    }
+    &:active {
+      background-color: darken(@blue, 20%);
+    }
   }
 }

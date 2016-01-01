@@ -14,6 +14,16 @@
     font-family: 'PT Sans', sans-serif;
     &[type="text"] {
       padding-left: 20px;
+      &:hover {
+        background-color: darken(@grey, 10%);
+      }
+      &:focus {
+        background-color: white;
+        border: 3px solid @grey;
+      }
+    }
+    &[disabled] {
+      cursor: auto;
     }
   }
   label[for="duration"] {
@@ -26,6 +36,13 @@
     color:darken(@grey, 25%);
     border: none;
     vertical-align: top;
+    &:hover {
+      background-color: @blue;
+      color:white;
+    }
+    &:active {
+      background-color: darken(@blue, 10%);
+    }
   }
   &__arrival {
     width: 100%;          

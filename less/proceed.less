@@ -26,6 +26,12 @@
     line-height: 60px;
     margin: 0 auto;
     margin-bottom: 40px;
+    &:hover {
+      background-color: darken(@blue, 10%);
+    }
+    &:active {
+      background-color: darken(@blue, 20%);
+    }
   }
   @media @tablet {
     &__header {
