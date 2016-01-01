@@ -41,6 +41,12 @@
   }
   @media @tablet {
     display: flex;
+    &__item {
+      flex-basis: 32%;
+      &:first-child {
+        flex-basis: 36%;
+      }
+    }
     &__firstname {
       padding-left: 6px;
     }

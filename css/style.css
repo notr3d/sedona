@@ -614,26 +614,26 @@
     font-size: 26px;
   }
 }
-section {
+.main-container--form section {
   border-bottom: 2px solid #eee;
   padding: 20px 0;
 }
-section h2 {
+.main-container--form section h2 {
   font-size: 18px;
   text-align: center;
   margin-bottom: 20px;
   text-transform: uppercase;
 }
-section input {
+.main-container--form section input {
   outline: none;
   cursor: pointer;
 }
 @media (min-width: 768px) {
-  section {
+  .main-container--form section {
     position: relative;
     padding: 40px 0 80px;
   }
-  section h2 {
+  .main-container--form section h2 {
     font-size: 21px;
     position: absolute;
     top: -30px;
@@ -922,6 +922,12 @@ input[type="submit"] {
   .f-traveler {
     display: flex;
   }
+  .f-traveler__item {
+    flex-basis: 32%;
+  }
+  .f-traveler__item:first-child {
+    flex-basis: 36%;
+  }
   .f-traveler__firstname {
     padding-left: 6px;
   }
@@ -974,7 +980,7 @@ input[type="submit"] {
 }
 @media (min-width: 768px) {
   .f-attraction {
-    padding: 80px 0 60px;
+    padding: 80px 0 60px !important;
     display: flex;
     flex-wrap: wrap;
   }
